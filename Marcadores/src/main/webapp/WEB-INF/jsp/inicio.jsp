@@ -20,7 +20,7 @@
         
         <div class="contenedor">
             <header>
-                <form action="/Ejercicio1-Marcadores/agregaMarcador"> 
+                <form action="/Marcadores/agregaMarcador"> 
                     <button id="btnSes" class="btn btn-primary btn-lg" >Agrega un marcador</button>
                 </form>
             </header>

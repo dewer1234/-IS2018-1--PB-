@@ -27,7 +27,7 @@
             </section>
             <aside>
                 
-                <form action="/Ejercicio1-Marcadores/actualizar" method="POST">
+                <form action="/Marcadores/actualizar" method="POST">
                     <input id="id" name="id" hidden="true" value="${marcador.marcadorid}"><br>
                     <input id="nombre" name="nombre"   placeholder="${marcador.nombre}"><br>
                     <input id="latitud" name="latitud" readonly="readonly" placeholder="${marcador.latitud}"><br>

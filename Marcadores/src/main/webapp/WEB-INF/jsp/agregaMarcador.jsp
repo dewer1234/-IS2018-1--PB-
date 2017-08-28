@@ -32,7 +32,7 @@
                 <b>Closest matching address:</b>
                 <div id="address"></div>
                 <b>Current position:</b>
-                <form action="/Ejercicio1-Marcadores/guardaMarcador" method="GET">
+                <form action="/Marcadores/guardaMarcador" method="GET">
                     <input id ="latitud" name = "latitud"  readonly="readonly" >
                     <input id ="longitud" name = "longitud"  readonly="readonly" >
                     <input name = "nombre"  placeholder="Nombre del punto" required="true">
