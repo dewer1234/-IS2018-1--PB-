@@ -42,13 +42,13 @@
                     </thead>
                     <c:forEach var="m" items="${marcadores}">
                         <tbody>
-                            <th>${m.nombre}</th>
-                            <th>${m.latitud}</th>
-                            <th>${m.longitud}</th>
+                            <th>${m.varNombreM}</th>
+                            <th>${m.varLatitud}</th>
+                            <th>${m.varLongitud}</th>
                             <th>
-                                <form action="/Ejercicio1-Marcadores/actualizaM" method="GET">
-                                    <input id="latitud" name="latitud" hidden="true" value="${m.latitud}">
-                                    <input id="longitud" name="longitud" hidden="true" value="${m.longitud}">
+                                <form action="/Marcadores/actualizaM" method="GET">
+                                    <input id="latitud" name="latitud" hidden="true" value="${m.varLatitud}">
+                                    <input id="longitud" name="longitud" hidden="true" value="${m.varLongitud}">
                                     <button type="submit" class="btn btn-primary btn-lg active">Actualiza</button>
                                 </form> 
                             </th>
@@ -84,21 +84,21 @@
             
             markerLat = [
                 <c:forEach var="s" items="${marcadores}" varStatus="status">
-                    <c:out value="${s.latitud}"/>,
+                    <c:out value="${s.varLatitud}"/>,
                 </c:forEach>];
             markerLong = [
                 <c:forEach var="s" items="${marcadores}" varStatus="status">
-                <c:out value="${s.longitud}"/>,
+                <c:out value="${s.varLongitud}"/>,
                 </c:forEach>];
             
             markerName = [
                 <c:forEach var="s" items="${marcadores}" varStatus="status">
-                "${s.nombre}",
+                "${s.varNombreM}",
                 </c:forEach>];
             
             markerDescr = [
                 <c:forEach var="s" items="${marcadores}" varStatus="status">
-                "${s.descripcion}",
+                "${s.varDescripcion}",
                 </c:forEach>];
     
             map = new google.maps.Map(document.getElementById('mapa'), {
