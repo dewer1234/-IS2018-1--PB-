@@ -24,6 +24,7 @@
         <property name="annotatedClasses">
             <list>
                 <value>mx.unam.ciencias.is.mapeobd.Marcador</value>
+                <value>mx.unam.ciencias.is.mapeobd.Usuario</value>
             </list>
         </property>
         <property name="hibernateProperties">
@@ -39,5 +40,6 @@
           en el paquete controlador, se esta haciendo uso de @Autowired-->
     <!--Ejemplo para configurar bean-->
     <bean id="MarcadorDAO" class="mx.unam.ciencias.is.modelo.MarcadorDAO" p:sessionFactory-ref="hibernate4AnnotatedSessionFactory"/>
+    <bean id="UsuarioDAO" class="mx.unam.ciencias.is.modelo.UsuarioDAO" p:sessionFactory-ref="hibernate4AnnotatedSessionFactory"/>
 
 </beans>
