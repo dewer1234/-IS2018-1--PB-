@@ -32,12 +32,14 @@ public class ControladorMarcador {
     @Autowired
     MarcadorDAO marcador_db;
     
+
+    
     /**
      * Regresa la pagina principal con los marcadores de la base de datos
      * @param model 
      * @return regresa el modelo 
      */
-    @RequestMapping(value="/", method = RequestMethod.GET)
+    @RequestMapping(value="/inicio", method = RequestMethod.GET)
     public ModelAndView marcadores(ModelMap model){
         List<Marcador> mar = marcador_db.getMarcadores();
           
@@ -78,7 +80,7 @@ public class ControladorMarcador {
             marcador_db.guardar(m);
         
         }
-        return "redirect:/";
+        return "redirect:/inicio";
     }
     
     
